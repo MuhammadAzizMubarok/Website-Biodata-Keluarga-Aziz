@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 1.2 | Praktikum Aziz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style-halaman.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a href="../../index.html" class="logo">The Laprak<span>.</span></a>
+      <nav>
+        <a href="../../index.html#daftar">← Daftar Modul</a>
+        <a href="../../../index.html" class="nav-cta">🏠 Web Utama</a>
+      </nav>
+    </header>
+    <main>
+      <section class="head">
+        <span class="badge">📑 Modul 1 &middot; 2 dari 7</span>
+        <h1>Latihan 1.2 <span class="grad">Definition list &amp; ordered list</span></h1>
+        <p class="sub">Berkas: <code>Latihan_01_02.html</code></p>
+      </section>
+      <div class="bar">
+        <button type="button" class="btn on" id="tHasil">▶ Hasil Halaman</button>
+        <button type="button" class="btn" id="tKode">&lt;/&gt; Kode HTML</button>
+        <a class="btn" href="../Latihan_01_02.html" target="_blank" rel="noopener">Buka di tab baru</a>
+        <a class="btn" href="../Latihan_01_02.html" download="Latihan_01_02.html">⬇ Unduh</a>
+      </div>
+      <div class="panel">
+        <iframe id="hasil" src="../Latihan_01_02.html" title="Latihan 1.2"></iframe>
+        <pre id="kode" hidden><code>&lt;main&gt;
+  &lt;div&gt;
+    &lt;article&gt;
+      &lt;h1&gt;Visi - Misi&lt;/h1&gt;
+
+      &lt;dl&gt;
+        &lt;dt&gt;Visi&lt;/dt&gt;
+        &lt;dd&gt;
+          “Terwujudnya Fakultas Ilmu Komputer Universitas Kuningan sebagai
+          fakultas andal yang unggul dalam penyelenggaraan Tri Darma Perguruan
+          Tinggi di Wilayah Jawa Barat pada tahun 2032“
+        &lt;/dd&gt;
+
+        &lt;dt&gt;Misi&lt;/dt&gt;
+        &lt;dd&gt;
+          &lt;ol type=&quot;1&quot;&gt;
+            &lt;li&gt;
+              Menyelenggarakan pendidikan, penelitian, dan pengabdian pada
+              masyarakat secara terpadu berdasarkan pada kaidah- kaidah
+              pendidikan modern.
+            &lt;/li&gt;
+
+            &lt;li&gt;
+              Membina dan mengembangkan kehidupan akademik yang sehat sesuai
+              dengan nilai-nilai dan norma- norma yang berkembang di dunia
+              akademik.
+            &lt;/li&gt;
+
+            &lt;li&gt;
+              Menyelenggarakan riset-riset ilmiah yang tidak saja mampu
+              mendorong pertumbuhan ilmu dan teknologi lagi juga dapat menjamin
+              kebutuhan dunia industri dan bisnis yang berkembang sangat pesat
+              dewasa ini.
+            &lt;/li&gt;
+
+            &lt;li&gt;
+              Menjadi sarana terjadinya pertemuan- pertemuan ilmiah baik lingkup
+              lokal maupun nasional sehingga dapat memberikan warna dan
+              kontribusi yang nyata dalam kemajuan ilmu dan teknologi.
+            &lt;/li&gt;
+
+            &lt;li&gt;
+              Melayani, memandu, dan menyatu dengan masyarakat dalam upaya ikut
+              serta mewujudkan masyarakat baru Indonesia yang adil dan makmur.
+            &lt;/li&gt;
+
+            &lt;li&gt;
+              Menjadi sarana penggodokan generasi muda sehingga mampu mandiri,
+              profesional, dan berakhlak mulia yang bermanfaat bagi dirinya,
+              masyarakat, bangsa, dan negara.
+            &lt;/li&gt;
+
+            &lt;li&gt;
+              Meningkatkan budaya baca dalam upaya mewujudkan generasi yang
+              memiliki wawasan yang luas dalam bidang IPTEK sesuai dengan minat
+              kajiannya
+            &lt;/li&gt;
+          &lt;/ol&gt;
+        &lt;/dd&gt;
+      &lt;/dl&gt;
+    &lt;/article&gt;
+  &lt;/div&gt;
+&lt;/main&gt;
+</code></pre>
+      </div>
+      <div class="pn">
+        <a class="btn " href="Latihan_01_01.html">← Latihan 1.1</a>
+        <a class="btn " href="Latihan_01_03.html">Latihan 1.3 →</a>
+      </div>
+    </main>
+    <footer>&copy; 2026 Muhammad Aziz Mubarok &middot; Praktikum Web Desain</footer>
+    <script>
+      const h=document.getElementById("hasil"),k=document.getElementById("kode"),a=document.getElementById("tHasil"),b=document.getElementById("tKode");
+      function tab(kode){h.hidden=kode;k.hidden=!kode;a.classList.toggle("on",!kode);b.classList.toggle("on",kode);}
+      a.onclick=()=>tab(false);b.onclick=()=>tab(true);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post-Test 01 | Praktikum Aziz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style-halaman.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a href="../../index.html" class="logo">The Laprak<span>.</span></a>
+      <nav>
+        <a href="../../index.html#daftar">← Daftar Modul</a>
+        <a href="../../../index.html" class="nav-cta">🏠 Web Utama</a>
+      </nav>
+    </header>
+    <main>
+      <section class="head">
+        <span class="badge">📑 Modul 1 &middot; 7 dari 7</span>
+        <h1>Post-Test 01 <span class="grad">Profil program studi</span></h1>
+        <p class="sub">Berkas: <code>POST-TEST_01.html</code></p>
+      </section>
+      <div class="bar">
+        <button type="button" class="btn on" id="tHasil">▶ Hasil Halaman</button>
+        <button type="button" class="btn" id="tKode">&lt;/&gt; Kode HTML</button>
+        <a class="btn" href="../POST-TEST_01.html" target="_blank" rel="noopener">Buka di tab baru</a>
+        <a class="btn" href="../POST-TEST_01.html" download="POST-TEST_01.html">⬇ Unduh</a>
+      </div>
+      <div class="panel">
+        <iframe id="hasil" src="../POST-TEST_01.html" title="Post-Test 01"></iframe>
+        <pre id="kode" hidden><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;id&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Profil Program Studi FIKOM&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Profil Program Studi&lt;/h1&gt;
+    &lt;h2&gt;Fakultas Ilmu Komputer Universitas Kuningan&lt;/h2&gt;
+
+    &lt;h3&gt;1. Sistem Informasi&lt;/h3&gt;
+    &lt;p&gt;
+      Program studi yang mempelajari perancangan, pengembangan, dan pengelolaan
+      sistem informasi untuk mendukung kebutuhan organisasi.
+    &lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Jenjang: S1&lt;/li&gt;
+      &lt;li&gt;Gelar: S.Kom&lt;/li&gt;
+      &lt;li&gt;Prospek: system analyst, web developer, data analyst&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h3&gt;2. Teknik Informatika&lt;/h3&gt;
+    &lt;p&gt;
+      Program studi yang mempelajari pengembangan perangkat lunak, algoritma,
+      dan teknologi komputasi.
+    &lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Jenjang: S1&lt;/li&gt;
+      &lt;li&gt;Gelar: S.Kom&lt;/li&gt;
+      &lt;li&gt;Prospek: programmer, software engineer, network engineer&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h3&gt;3. Desain Komunikasi Visual (DKV)&lt;/h3&gt;
+    &lt;p&gt;
+      Program studi yang mempelajari perancangan komunikasi visual melalui
+      gambar, ilustrasi, tipografi, dan media digital untuk menyampaikan pesan
+      secara kreatif.
+    &lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Jenjang: S1&lt;/li&gt;
+      &lt;li&gt;Gelar: S.Kom&lt;/li&gt;
+      &lt;li&gt;Prospek: desainer grafis, ilustrator, desainer UI/UX&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h3&gt;4. Teknik Sipil&lt;/h3&gt;
+    &lt;p&gt;
+      Program studi yang mempelajari perencanaan, perancangan, pembangunan, dan
+      pemeliharaan infrastruktur seperti gedung, jalan, dan jembatan.
+    &lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Jenjang: S1&lt;/li&gt;
+      &lt;li&gt;Gelar: S.Kom&lt;/li&gt;
+      &lt;li&gt;Prospek: insinyur sipil, site engineer, konsultan konstruksi&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+      </div>
+      <div class="pn">
+        <a class="btn " href="TUGAS_01.html">← Tugas 01</a>
+        <a class="btn off" href="#">Berikutnya →</a>
+      </div>
+    </main>
+    <footer>&copy; 2026 Muhammad Aziz Mubarok &middot; Praktikum Web Desain</footer>
+    <script>
+      const h=document.getElementById("hasil"),k=document.getElementById("kode"),a=document.getElementById("tHasil"),b=document.getElementById("tKode");
+      function tab(kode){h.hidden=kode;k.hidden=!kode;a.classList.toggle("on",!kode);b.classList.toggle("on",kode);}
+      a.onclick=()=>tab(false);b.onclick=()=>tab(true);
+    </script>
+  </body>
+</html>

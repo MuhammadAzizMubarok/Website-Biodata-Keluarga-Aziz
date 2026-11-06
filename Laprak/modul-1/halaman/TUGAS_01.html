@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 01 | Praktikum Aziz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style-halaman.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a href="../../index.html" class="logo">The Laprak<span>.</span></a>
+      <nav>
+        <a href="../../index.html#daftar">← Daftar Modul</a>
+        <a href="../../../index.html" class="nav-cta">🏠 Web Utama</a>
+      </nav>
+    </header>
+    <main>
+      <section class="head">
+        <span class="badge">📑 Modul 1 &middot; 6 dari 7</span>
+        <h1>Tugas 01 <span class="grad">Biodata diri</span></h1>
+        <p class="sub">Berkas: <code>TUGAS_01.html</code></p>
+      </section>
+      <div class="bar">
+        <button type="button" class="btn on" id="tHasil">▶ Hasil Halaman</button>
+        <button type="button" class="btn" id="tKode">&lt;/&gt; Kode HTML</button>
+        <a class="btn" href="../TUGAS_01.html" target="_blank" rel="noopener">Buka di tab baru</a>
+        <a class="btn" href="../TUGAS_01.html" download="TUGAS_01.html">⬇ Unduh</a>
+      </div>
+      <div class="panel">
+        <iframe id="hasil" src="../TUGAS_01.html" title="Tugas 01"></iframe>
+        <pre id="kode" hidden><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;id&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Biodata Diri Saya&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;h1&gt;Biodata Diri Saya&lt;/h1&gt;
+      &lt;nav&gt;
+        &lt;a href=&quot;#profil&quot;&gt;Profil&lt;/a&gt;
+        &lt;a href=&quot;#pendidikan&quot;&gt;Pendidikan&lt;/a&gt;
+        &lt;a href=&quot;#hobi&quot;&gt;Hobi&lt;/a&gt;
+        &lt;a href=&quot;#kontak&quot;&gt;Kontak&lt;/a&gt;
+      &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+      &lt;section id=&quot;profil&quot;&gt;
+        &lt;h2&gt;Profil&lt;/h2&gt;
+        &lt;img src=&quot;.vscode/FotoAziz.jpeg&quot; alt=&quot;Foto Profil&quot; width=&quot;150&quot; /&gt;
+
+        &lt;table border=&quot;1&quot; cellpadding=&quot;6&quot;&gt;
+          &lt;tr&gt;
+            &lt;th&gt;Nama&lt;/th&gt;
+            &lt;td&gt;Muhammad Aziz Mubarok&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th&gt;NIM&lt;/th&gt;
+            &lt;td&gt;20250910056&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th&gt;Prodi&lt;/th&gt;
+            &lt;td&gt;Sistem Informasi&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;th&gt;Asal&lt;/th&gt;
+            &lt;td&gt;Kuningan&lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt;
+      &lt;/section&gt;
+
+      &lt;section id=&quot;pendidikan&quot;&gt;
+        &lt;h2&gt;Riwayat Pendidikan&lt;/h2&gt;
+        &lt;ol&gt;
+          &lt;li&gt;MI Al-Istiqomah Cibingbin&lt;/li&gt;
+          &lt;li&gt;MTsN 8 Kuningan&lt;/li&gt;
+          &lt;li&gt;SMAN 1 Cibingbin&lt;/li&gt;
+          &lt;li&gt;Universitas Kuningan&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/section&gt;
+
+      &lt;section id=&quot;hobi&quot;&gt;
+        &lt;h2&gt;Hobi&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Main game&lt;/li&gt;
+          &lt;li&gt;Berenang&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer id=&quot;kontak&quot;&gt;
+      &lt;h2&gt;Kontak&lt;/h2&gt;
+      &lt;p&gt;
+        Email:
+        &lt;a href=&quot;mailto:zizztdrz123@gmail.com&quot;&gt; zizztdrz123@gmail.com &lt;/a&gt;
+      &lt;/p&gt;
+      &lt;p&gt;Copy 2026 Aziz&lt;/p&gt;
+    &lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+      </div>
+      <div class="pn">
+        <a class="btn " href="Latihan_01_05.html">← Latihan 1.5</a>
+        <a class="btn " href="POST-TEST_01.html">Post-Test 01 →</a>
+      </div>
+    </main>
+    <footer>&copy; 2026 Muhammad Aziz Mubarok &middot; Praktikum Web Desain</footer>
+    <script>
+      const h=document.getElementById("hasil"),k=document.getElementById("kode"),a=document.getElementById("tHasil"),b=document.getElementById("tKode");
+      function tab(kode){h.hidden=kode;k.hidden=!kode;a.classList.toggle("on",!kode);b.classList.toggle("on",kode);}
+      a.onclick=()=>tab(false);b.onclick=()=>tab(true);
+    </script>
+  </body>
+</html>

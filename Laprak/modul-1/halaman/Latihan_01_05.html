@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 1.5 | Praktikum Aziz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style-halaman.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a href="../../index.html" class="logo">The Laprak<span>.</span></a>
+      <nav>
+        <a href="../../index.html#daftar">← Daftar Modul</a>
+        <a href="../../../index.html" class="nav-cta">🏠 Web Utama</a>
+      </nav>
+    </header>
+    <main>
+      <section class="head">
+        <span class="badge">📑 Modul 1 &middot; 5 dari 7</span>
+        <h1>Latihan 1.5 <span class="grad">Formulir</span></h1>
+        <p class="sub">Berkas: <code>Latihan_01_05.html</code></p>
+      </section>
+      <div class="bar">
+        <button type="button" class="btn on" id="tHasil">▶ Hasil Halaman</button>
+        <button type="button" class="btn" id="tKode">&lt;/&gt; Kode HTML</button>
+        <a class="btn" href="../Latihan_01_05.html" target="_blank" rel="noopener">Buka di tab baru</a>
+        <a class="btn" href="../Latihan_01_05.html" download="Latihan_01_05.html">⬇ Unduh</a>
+      </div>
+      <div class="panel">
+        <iframe id="hasil" src="../Latihan_01_05.html" title="Latihan 1.5"></iframe>
+        <pre id="kode" hidden><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Latihan 5&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;form action=&quot;&quot;&gt;
+      &lt;fieldset&gt;
+        &lt;table&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Nama Lengkap&lt;/td&gt;
+            &lt;td&gt;:&lt;/td&gt;
+            &lt;td&gt;&lt;input type=&quot;text&quot; /&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Tempat Lahir&lt;/td&gt;
+            &lt;td&gt;:&lt;/td&gt;
+            &lt;td&gt;&lt;input type=&quot;text&quot; /&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Tanggal Lahir&lt;/td&gt;
+            &lt;td&gt;:&lt;/td&gt;
+            &lt;td&gt;&lt;input type=&quot;Date&quot; /&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Jenis Kelamin&lt;/td&gt;
+            &lt;td&gt;:&lt;/td&gt;
+            &lt;td&gt;
+              &lt;input
+                type=&quot;radio&quot;
+                name=&quot;jenis_kelamin&quot;
+                value=&quot;laki-laki&quot;
+              /&gt;Laki-laki
+              &lt;input
+                type=&quot;radio&quot;
+                name=&quot;jenis_kelamin&quot;
+                value=&quot;perempuan&quot;
+              /&gt;Perempuan
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Alamat&lt;/td&gt;
+            &lt;td&gt;:&lt;/td&gt;
+            &lt;td&gt;&lt;textarea cols=&quot;22&quot; rows=&quot;3&quot;&gt;&lt;/textarea&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;E-mail&lt;/td&gt;
+            &lt;td&gt;:&lt;/td&gt;
+            &lt;td&gt;&lt;input type=&quot;email&quot; /&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;No Hp&lt;/td&gt;
+            &lt;td&gt;:&lt;/td&gt;
+            &lt;td&gt;&lt;input type=&quot;number&quot; /&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;Kota&lt;/td&gt;
+            &lt;td&gt;:&lt;/td&gt;
+            &lt;td&gt;
+              &lt;select&gt;
+                &lt;option&gt;**SELECT KOTA**&lt;/option&gt;
+                &lt;option&gt;Bogor&lt;/option&gt;
+                &lt;option&gt;Jakarta&lt;/option&gt;
+                &lt;option&gt;Bekasi&lt;/option&gt;
+                &lt;option&gt;Tangerang&lt;/option&gt;
+                &lt;option&gt;Depok&lt;/option&gt;
+                &lt;option&gt;cikarang&lt;/option&gt;
+                &lt;option&gt;Banten&lt;/option&gt;
+              &lt;/select&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr&gt;
+            &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+            &lt;td&gt;&amp;nbsp;&lt;/td&gt;
+            &lt;td&gt;
+              &lt;input type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Simpan&quot; /&gt;
+              &lt;input type=&quot;reset&quot; name=&quot;reset&quot; value=&quot;Batal&quot; /&gt;
+            &lt;/td&gt;
+          &lt;/tr&gt;
+        &lt;/table&gt;
+      &lt;/fieldset&gt;
+    &lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+      </div>
+      <div class="pn">
+        <a class="btn " href="Latihan_01_04.html">← Latihan 1.4</a>
+        <a class="btn " href="TUGAS_01.html">Tugas 01 →</a>
+      </div>
+    </main>
+    <footer>&copy; 2026 Muhammad Aziz Mubarok &middot; Praktikum Web Desain</footer>
+    <script>
+      const h=document.getElementById("hasil"),k=document.getElementById("kode"),a=document.getElementById("tHasil"),b=document.getElementById("tKode");
+      function tab(kode){h.hidden=kode;k.hidden=!kode;a.classList.toggle("on",!kode);b.classList.toggle("on",kode);}
+      a.onclick=()=>tab(false);b.onclick=()=>tab(true);
+    </script>
+  </body>
+</html>

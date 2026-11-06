@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 1.3 | Praktikum Aziz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style-halaman.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a href="../../index.html" class="logo">The Laprak<span>.</span></a>
+      <nav>
+        <a href="../../index.html#daftar">← Daftar Modul</a>
+        <a href="../../../index.html" class="nav-cta">🏠 Web Utama</a>
+      </nav>
+    </header>
+    <main>
+      <section class="head">
+        <span class="badge">📑 Modul 1 &middot; 3 dari 7</span>
+        <h1>Latihan 1.3 <span class="grad">Gambar &amp; unordered list</span></h1>
+        <p class="sub">Berkas: <code>Latihan_01_03.html</code></p>
+      </section>
+      <div class="bar">
+        <button type="button" class="btn on" id="tHasil">▶ Hasil Halaman</button>
+        <button type="button" class="btn" id="tKode">&lt;/&gt; Kode HTML</button>
+        <a class="btn" href="../Latihan_01_03.html" target="_blank" rel="noopener">Buka di tab baru</a>
+        <a class="btn" href="../Latihan_01_03.html" download="Latihan_01_03.html">⬇ Unduh</a>
+      </div>
+      <div class="panel">
+        <iframe id="hasil" src="../Latihan_01_03.html" title="Latihan 1.3"></iframe>
+        <pre id="kode" hidden><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Latihan 01&lt;/title&gt;
+&lt;/head&gt;
+&lt;main&gt;
+    &lt;div&gt;
+        &lt;article&gt;
+            &lt;img src=&quot;Image/SI-1-1-768x137.png&quot; alt=&quot;&quot;&gt;
+            &lt;div&gt;&lt;b&gt;VISI&lt;/b&gt;&lt;/div&gt;
+            Terwujudnya program studi sistem informasi sebagai program studi yang handal dan
+            unggul dalam penyelenggaraan Tri Darma Perguruan Tinggi, unggul di bidang
+            rekayasa sistem informasi di Wilayah Jawa Barat pada tahun 2032.
+            &lt;div&gt;&lt;b&gt;&lt;i&gt;PROFIL LULUSAN &amp; PILIHAN KARIR&lt;/i&gt;&lt;/b&gt;&lt;/div&gt;
+            System Analyst, Data Analyst, Chief Information Officer (CIO), Software Quality
+            Assurance.
+            &lt;div&gt;&lt;b&gt;&lt;u&gt;KEGIATAN MBKM&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Magang&lt;/li&gt;
+                &lt;li&gt;Studi Independen&lt;/li&gt;
+                &lt;li&gt;Bangkit Academy&lt;/li&gt;
+                &lt;li&gt;Pertukaran Mahasiswa Merdeka (PMM) Nusantara&lt;/li&gt;
+                &lt;li&gt;International Credit Transfer (ICT)&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;div&gt;&lt;b&gt;&lt;u&gt;
+                        &lt;&gt;PROGRAM UNGGULAN&lt;/i&gt;
+                    &lt;/u&gt;&lt;/b&gt;&lt;/div&gt;
+            &lt;ul type=&quot;square&quot;&gt;
+                &lt;li&gt;Pertukaran Mahasiswa ke University Utara Malaysia (UUM)&lt;/li&gt;
+                &lt;li&gt;Praktisi/Dosen Kompetensi dari Universitas lain&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;div&gt;&lt;strong&gt;PRESTASI MAHASISWA&lt;/strong&gt;&lt;/div&gt;
+            &lt;ul type=&quot;circle&quot;&gt;
+                &lt;li&gt;Juara 1 lomba Desain Cindramata 2018&lt;/li&gt;
+                &lt;li&gt;Juara Favorit lomba poster STIKKU 2017&lt;/li&gt;
+                &lt;li&gt;Mahasiswa Berprestasi UNIKU 2022&lt;/li&gt;
+                &lt;li&gt;Duta Putra Sosial Kuningan 2022&lt;/li&gt;
+                &lt;li&gt;Juara Lomba LLDIKTI Konsep Garapan Terbaik Tingkat Jabar-Banten 2022&lt;/li&gt;
+                &lt;li&gt;PPK Ormawa&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;div&gt;SERTIFIKASI&lt;/div&gt;
+            &lt;img src=&quot;Image/BNSP-1024x83.png&quot; alt=&quot;&quot;&gt;
+        &lt;/article&gt;
+    &lt;/div&gt;
+&lt;/main&gt;
+&lt;/html&gt;</code></pre>
+      </div>
+      <div class="pn">
+        <a class="btn " href="Latihan_01_02.html">← Latihan 1.2</a>
+        <a class="btn " href="Latihan_01_04.html">Latihan 1.4 →</a>
+      </div>
+    </main>
+    <footer>&copy; 2026 Muhammad Aziz Mubarok &middot; Praktikum Web Desain</footer>
+    <script>
+      const h=document.getElementById("hasil"),k=document.getElementById("kode"),a=document.getElementById("tHasil"),b=document.getElementById("tKode");
+      function tab(kode){h.hidden=kode;k.hidden=!kode;a.classList.toggle("on",!kode);b.classList.toggle("on",kode);}
+      a.onclick=()=>tab(false);b.onclick=()=>tab(true);
+    </script>
+  </body>
+</html>
