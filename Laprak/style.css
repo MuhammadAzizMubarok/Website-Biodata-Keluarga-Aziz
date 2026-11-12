@@ -310,3 +310,6 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+
+/* ---------- Placeholder berkas (modul yang belum ada isinya) ---------- */
+.berkas-kosong { padding: 9px 14px; border-radius: 14px; background: var(--biru-sangat-muda); border: 1px dashed var(--biru); color: var(--teks-lembut); font-size: 0.82rem; text-align: center; }

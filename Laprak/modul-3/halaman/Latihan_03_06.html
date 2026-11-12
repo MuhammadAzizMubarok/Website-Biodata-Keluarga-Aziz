@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 3.6 | Praktikum Aziz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style-halaman.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a href="../../index.html" class="logo">The Laprak<span>.</span></a>
+      <nav>
+        <a href="../../index.html#daftar">← Daftar Modul</a>
+        <a href="../../../index.html" class="nav-cta">🏠 Web Utama</a>
+      </nav>
+    </header>
+    <main>
+      <section class="head">
+        <span class="badge">📑 Modul 3 &middot; 6 dari 11</span>
+        <h1>Latihan 3.6 <span class="grad">Animasi &amp; transisi</span></h1>
+        <p class="sub">Berkas: <code>Latihan_03_06.html</code></p>
+      </section>
+      <div class="bar">
+        <button type="button" class="btn on" id="tHasil">▶ Hasil Halaman</button>
+        <button type="button" class="btn" id="tKode">&lt;/&gt; Kode HTML</button>
+        <a class="btn" href="../Latihan_03_06/Latihan_03_06.html" target="_blank" rel="noopener">Buka di tab baru</a>
+        <a class="btn" href="../Latihan_03_06/Latihan_03_06.html" download="Latihan_03_06.html">⬇ Unduh</a>
+        <a class="btn" href="../Latihan_03_06/stylesheet_03_06.css" download="stylesheet_03_06.css">⬇ CSS</a>
+      </div>
+      <div class="panel">
+        <iframe id="hasil" src="../Latihan_03_06/Latihan_03_06.html" title="Latihan 3.6"></iframe>
+        <pre id="kode" hidden><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Praktikum Animasi dan Transisi&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;stylesheet_03_06.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;button class=&quot;btn&quot;&gt;Hover Me!&lt;/button&gt;
+    &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+/* ===== stylesheet_03_06.css ===== */
+.btn {
+    padding: 10px 20px;
+    background-color: coral;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.btn:hover {
+    background-color: darkred;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin-top: 20px;
+    animation: slide 2s infinite;
+}
+@keyframes slide {
+    0% {
+    transform: translateX(0);
+    }
+    50% {
+    transform: translateX(100px);
+    }
+    100% {
+    transform: translateX(0);
+    }
+}
+</code></pre>
+      </div>
+      <div class="pn">
+        <a class="btn" href="Latihan_03_05.html">← Latihan 3.5</a>
+        <a class="btn" href="Latihan_03_07.html">Latihan 3.7 →</a>
+      </div>
+    </main>
+    <footer>&copy; 2026 Muhammad Aziz Mubarok &middot; Praktikum Pemrograman Dasar</footer>
+    <script>
+      const h=document.getElementById("hasil"),k=document.getElementById("kode"),a=document.getElementById("tHasil"),b=document.getElementById("tKode");
+      function tab(kode){h.hidden=kode;k.hidden=!kode;a.classList.toggle("on",!kode);b.classList.toggle("on",kode);}
+      a.onclick=()=>tab(false);b.onclick=()=>tab(true);
+    </script>
+  </body>
+</html>

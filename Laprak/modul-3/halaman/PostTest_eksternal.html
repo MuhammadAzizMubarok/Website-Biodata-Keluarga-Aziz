@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post-Test 03 Eksternal | Praktikum Aziz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style-halaman.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a href="../../index.html" class="logo">The Laprak<span>.</span></a>
+      <nav>
+        <a href="../../index.html#daftar">← Daftar Modul</a>
+        <a href="../../../index.html" class="nav-cta">🏠 Web Utama</a>
+      </nav>
+    </header>
+    <main>
+      <section class="head">
+        <span class="badge">📑 Modul 3 &middot; 10 dari 11</span>
+        <h1>Post-Test 03 Eksternal <span class="grad">CSS eksternal</span></h1>
+        <p class="sub">Berkas: <code>PostTest_eksternal.html</code></p>
+      </section>
+      <div class="bar">
+        <button type="button" class="btn on" id="tHasil">▶ Hasil Halaman</button>
+        <button type="button" class="btn" id="tKode">&lt;/&gt; Kode HTML</button>
+        <a class="btn" href="../POST_TEST_03/Eksternal/PostTest_eksternal.html" target="_blank" rel="noopener">Buka di tab baru</a>
+        <a class="btn" href="../POST_TEST_03/Eksternal/PostTest_eksternal.html" download="PostTest_eksternal.html">⬇ Unduh</a>
+        <a class="btn" href="../POST_TEST_03/Eksternal/PostTest_style.css" download="PostTest_style.css">⬇ CSS</a>
+      </div>
+      <div class="panel">
+        <iframe id="hasil" src="../POST_TEST_03/Eksternal/PostTest_eksternal.html" title="Post-Test 03 Eksternal"></iframe>
+        <pre id="kode" hidden><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;id&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;CSS Eksternal&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;PostTest_style.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Contoh CSS Eksternal&lt;/h1&gt;
+    &lt;p&gt;Gaya dipanggil dari file CSS terpisah.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+/* ===== PostTest_style.css ===== */
+h1 {
+    color: blue;
+    font-family: Arial;
+}
+p {   
+    border: 2px solid green;
+    padding: 10px;
+}</code></pre>
+      </div>
+      <div class="pn">
+        <a class="btn" href="PostTest_internal.html">← Post-Test 03 Internal</a>
+        <a class="btn" href="PostTest_inline.html">Post-Test 03 Inline →</a>
+      </div>
+    </main>
+    <footer>&copy; 2026 Muhammad Aziz Mubarok &middot; Praktikum Pemrograman Dasar</footer>
+    <script>
+      const h=document.getElementById("hasil"),k=document.getElementById("kode"),a=document.getElementById("tHasil"),b=document.getElementById("tKode");
+      function tab(kode){h.hidden=kode;k.hidden=!kode;a.classList.toggle("on",!kode);b.classList.toggle("on",kode);}
+      a.onclick=()=>tab(false);b.onclick=()=>tab(true);
+    </script>
+  </body>
+</html>

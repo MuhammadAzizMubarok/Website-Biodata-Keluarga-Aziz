@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 3.7 | Praktikum Aziz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../../style-halaman.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a href="../../index.html" class="logo">The Laprak<span>.</span></a>
+      <nav>
+        <a href="../../index.html#daftar">← Daftar Modul</a>
+        <a href="../../../index.html" class="nav-cta">🏠 Web Utama</a>
+      </nav>
+    </header>
+    <main>
+      <section class="head">
+        <span class="badge">📑 Modul 3 &middot; 7 dari 11</span>
+        <h1>Latihan 3.7 <span class="grad">Responsive design</span></h1>
+        <p class="sub">Berkas: <code>Latihan_03_07.html</code></p>
+      </section>
+      <div class="bar">
+        <button type="button" class="btn on" id="tHasil">▶ Hasil Halaman</button>
+        <button type="button" class="btn" id="tKode">&lt;/&gt; Kode HTML</button>
+        <a class="btn" href="../Latihan_03_07/Latihan_03_07.html" target="_blank" rel="noopener">Buka di tab baru</a>
+        <a class="btn" href="../Latihan_03_07/Latihan_03_07.html" download="Latihan_03_07.html">⬇ Unduh</a>
+        <a class="btn" href="../Latihan_03_07/stylesheet_03_07.css" download="stylesheet_03_07.css">⬇ CSS</a>
+      </div>
+      <div class="panel">
+        <iframe id="hasil" src="../Latihan_03_07/Latihan_03_07.html" title="Latihan 3.7"></iframe>
+        <pre id="kode" hidden><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Praktikum Responsive Design&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;stylesheet_03_07.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;Header&lt;/header&gt;
+    &lt;main&gt;Main Content&lt;/main&gt;
+    &lt;footer&gt;Footer&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+/* ===== stylesheet_03_07.css ===== */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+header, footer {
+    background-color: lightcoral;
+    padding: 10px;
+    text-align: center;
+}
+main {
+    flex: 1;
+    background-color: lightblue;
+    padding: 20px;
+}
+@media (max-width: 600px) {
+    body {
+    flex-direction: row;
+    }
+    header, footer {
+    flex: 1;
+    padding: 5px;
+    }
+    main {
+    flex: 2;
+    }
+}</code></pre>
+      </div>
+      <div class="pn">
+        <a class="btn" href="Latihan_03_06.html">← Latihan 3.6</a>
+        <a class="btn" href="TUGAS_03.html">Tugas 03 →</a>
+      </div>
+    </main>
+    <footer>&copy; 2026 Muhammad Aziz Mubarok &middot; Praktikum Pemrograman Dasar</footer>
+    <script>
+      const h=document.getElementById("hasil"),k=document.getElementById("kode"),a=document.getElementById("tHasil"),b=document.getElementById("tKode");
+      function tab(kode){h.hidden=kode;k.hidden=!kode;a.classList.toggle("on",!kode);b.classList.toggle("on",kode);}
+      a.onclick=()=>tab(false);b.onclick=()=>tab(true);
+    </script>
+  </body>
+</html>
